@@ -1,0 +1,20 @@
+.Body {
+    background-color: #FFEEDB !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #FFEEDB;
+    border: 1px solid #0C7C59;
+    outline: none;
+    position: fixed;
+    top: 20%;
+}
