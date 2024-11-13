@@ -1,0 +1,161 @@
+.restaurant-page {
+  color: #2e8b57; /* Verde */
+  background-color: #FFEEDB; /* Culoare de fundal */
+  padding: 20px;
+  border: none; /* Elimină chenarul */
+  min-height: 100vh; /* Asigură că fundalul acoperă întreaga înălțime a paginii */
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: #FFEEDB;
+  margin-bottom: 20px; /* Adaugă spațiu sub header */
+  border: none; /* Elimină chenarul */
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  
+  
+}
+
+.logo {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  width: 150px;
+  height: auto;
+  border: none; /* Elimină chenarul */
+}
+
+.restaurant-name-box {
+  position: absolute;
+  top: 115px; /* Ajustează această valoare pentru a poziționa textul sub logo */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FFEEDB; /* Verde cu transparență */
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none; /* Elimină chenarul */
+}
+
+.restaurant-name {
+  font-size: 3em;
+  color: #0f0f0f; /* Culoare text */
+  margin: 0;
+  border: none; /* Elimină chenarul */
+}
+
+.content-box {
+  position: absolute;
+  top: 430px; /* Ajustează această valoare pentru a poziționa chenarul mai jos */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adaugă umbră pentru un efect mai plăcut */
+  border: none; /* Elimină chenarul */
+}
+
+.schedule, .menu, .reservations {
+  background-color: transparent; /* Fundal transparent */
+  padding: 20px;
+  margin-bottom: 30px;
+ }
+
+.menu ul {
+  list-style-type: none; /* Elimină bulinele */
+  padding: 0;
+  border: none; /* Elimină chenarul */
+}
+
+.popup-section {
+  text-align: center;
+  margin-bottom: 20px;
+  border: none; /* Elimină chenarul */
+}
+
+.booking-button {
+  background-color: rgba(46, 139, 87, 0.8); /* Verde cu transparență */
+  color: white;
+  border: none; /* Elimină chenarul */
+  padding: 20px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px; /* Adaugă spațiu deasupra butonului */
+  opacity: 0.8; /* Setează transparența generală a butonului */
+}
+
+.back-button {
+  background-color: rgba(46, 139, 87, 0.8); /* Verde cu transparență */
+  color: white;
+  border: none; /* Elimină chenarul */
+  padding: 20px 60px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Centrează butonul și adaugă spațiu deasupra */
+  opacity: 0.8; /* Setează transparența generală a butonului */
+}
+
+.modal {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 500px;
+  box-shadow: none; /* Elimină umbra */
+  border: none; /* Elimină chenarul */
+}
+
+.overlay {
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; /* Elimină chenarul */
+}
+
+.reservations ul {
+  list-style-type: none; /* Elimină bulinele */
+  padding: 0;
+  border: none; /* Elimină chenarul */
+}
+
+.reservation-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: none; /* Elimină chenarul */
+}
+
+.delete-button {
+  background-color: #ff6347; /* Roșu */
+  color: white;
+  border: none; /* Elimină chenarul */
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Adaugă spațiu între text și buton */
+}
