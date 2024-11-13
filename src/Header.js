@@ -1,11 +1,12 @@
 import './Header.css'
-import logo from './GoeatLogo.png';
+import logoGoEat from './GoeatLogo.png';
 import profile from './profile.png';
+
 function Header()
 {
     return(
         <header className="header">
-            <img src={logo} width='100px' height='100px'/>
+            <img src={logoGoEat} width='100px' height='100px'/>
             <ul>
                 <li><a href='#'>Inregistreaza-ti Restaurantul</a></li>
                 <li><a href='#'>Catalog</a></li>
