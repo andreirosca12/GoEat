@@ -1,26 +1,83 @@
 .restaurant-page {
   text-align: center;
   padding: 20px;
+  background-color: #FFEEDB !important;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative; /* Adaugă poziționare relativă pentru a putea poziționa logo-ul */
 }
 
-.booking-button {
-  background-color: #4CAF50;
+.restaurant-page .logo {
+  position: absolute;
+  top: 49px;
+  left: 19px;
+  width: 150px; /* Setează dimensiunea logo-ului */
+  height: auto;
+}
+
+.restaurant-page h1 {
+  font-size: 2.5em; /* Mărește dimensiunea textului */
+  font-weight: bold; /* Opțional: îngroașă textul */
+}
+
+.booking-button, .back-button {
+  background-color: #0C7C59;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   margin: 20px 0;
+  border-radius: 5px; /* Adaugă colțuri rotunjite */
 }
 
-.schedule, .menu {
-  margin: 20px 0;
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .menu ul {
+  list-style-type: none; /* Elimină punctele din stânga elementelor din meniu */
+  padding: 0;
+}
+
+.reservations {
+  margin-top: 20px;
+}
+
+.reservations ul {
   list-style-type: none;
   padding: 0;
 }
 
-.menu li {
+.reservations li {
   margin: 5px 0;
+}
+
+.reservations button {
+  margin-left: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
 }
