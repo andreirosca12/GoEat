@@ -2,7 +2,7 @@ body{
     background-color: #ffeedb;
 }
 .header{
-    width: 98%;
+    width: 90%;
     margin: auto;
     height: 100px;
     background-color: #FFFAF4;
@@ -11,6 +11,16 @@ body{
     justify-content: space-between;
     gap:50px;
     background-color: #ffeedb;
+}
+.header .right-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header .right-container ul{
+    display: flex;
+    list-style:none;
+    gap: 20px;
 }
 .profile-dropdown{
     padding: 10px;
