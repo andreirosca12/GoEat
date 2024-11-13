@@ -1,0 +1,26 @@
+.restaurant-page {
+  text-align: center;
+  padding: 20px;
+}
+
+.booking-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0;
+}
+
+.schedule, .menu {
+  margin: 20px 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  margin: 5px 0;
+}
