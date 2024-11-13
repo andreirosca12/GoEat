@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Modal from 'react-modal';
 import './restaurantPage.css';
-import logo from './assets/GoeatLogo.png'; // Importă imaginea logo-ului
+import logo from './assets/marty.png'; // Importă imaginea logo-ului
+import backgroundImage from './assets/marty-restaurants-1-cover-850.jpg'; // Importă imaginea de fundal
 
 Modal.setAppElement('#root'); // Setează elementul principal al aplicației pentru accesibilitate
 
@@ -39,23 +40,43 @@ function RestaurantPage() {
 
   return (
     <div className="restaurant-page">
-      <img src={logo} alt="Logo" className="logo" /> {/* Adaugă imaginea logo-ului */}
-      <h1>Marty</h1>
-      <button className="booking-button" onClick={openModal}>Book Now</button>
-      <div className="schedule">
-        <h2>Program</h2>
-        <p>Monday - Friday: 10:00 - 22:00</p>
-        <p>Saturday - Sunday: 12:00 - 24:00</p>
+      <div className="header">
+        <img src={backgroundImage} alt="Restaurant" className="background-image" />
+        <img src={logo} alt="Logo" className="logo" />
+        <div className="restaurant-name-box">
+          <h1 className="restaurant-name">Marty</h1>
+        </div>
       </div>
-      <div className="menu">
-        <h2>Menu</h2>
-        <ul>
-          <li>Pizza Margherita - 25 RON</li>
-          <li>Spaghetti Carbonara - 30 RON</li>
-          <li>Caesar Salad - 20 RON</li>
-        </ul>
+      <div className="content-box">
+        <div className="popup-section">
+          <button className="booking-button" onClick={openModal}>Book Now</button>
+          <button className="back-button" onClick={() => navigate('/')}>Go Back</button>
+        </div>
+        <div className="schedule">
+          <h2>Program</h2>
+          <p>Monday - Friday: 10:00 - 22:00</p>
+          <p>Saturday - Sunday: 12:00 - 24:00</p>
+        </div>
+        <div className="menu">
+          <h2>Menu</h2>
+          <ul>
+            <li>Pizza Margherita - 25 RON</li>
+            <li>Spaghetti Carbonara - 30 RON</li>
+            <li>Caesar Salad - 20 RON</li>
+          </ul>
+        </div>
+        <div className="reservations">
+          <h2>My Reservations</h2>
+          <ul>
+            {reservations.map((reservation, index) => (
+              <li key={index} className="reservation-item">
+                {reservation}
+                <button className="delete-button" onClick={() => handleDeleteReservation(index)}>Delete</button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <button className="back-button" onClick={() => navigate('/')}>Go Back</button>
 
       <Modal
         isOpen={modalIsOpen}
@@ -64,7 +85,7 @@ function RestaurantPage() {
         className="modal"
         overlayClassName="overlay"
       >
-        <h2>Select  date & hour for resertvation</h2>
+        <h2>Select date & hour for reservation</h2>
         <ul>
           <li>
             <label>
@@ -104,18 +125,6 @@ function RestaurantPage() {
         <button onClick={handleReservation}>Confirm reservation</button>
         <button onClick={closeModal}>Close</button>
       </Modal>
-
-      <div className="reservations">
-        <h2>My Reservations</h2>
-        <ul>
-          {reservations.map((reservation, index) => (
-            <li key={index}>
-              {reservation}
-              <button onClick={() => handleDeleteReservation(index)}>Delete</button>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 }
