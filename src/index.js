@@ -5,11 +5,13 @@ import Header from './Header';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Login from './Login';
+import MainPageBody from './mainPageBody';
+import MainPage from './mainPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login/>
+    <MainPage />
   </React.StrictMode>
 );
 

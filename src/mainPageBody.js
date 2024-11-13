@@ -1,9 +1,11 @@
 
 import "./mainPageBody.css";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { useNavigate } from "react-router-dom"; // Import Link from React Router
+
 
 
 function MainPageBody() {
+
   return (
     <div className="Body">
       <div className="background-container">
