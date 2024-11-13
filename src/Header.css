@@ -17,19 +17,68 @@ body{
     align-items: center;
     gap: 40px;
 }
-.header .right-container ul{
+.header .right-container>ul{
     display: flex;
     list-style:none;
     gap: 20px;
 }
-.profile-dropdown{
-    padding: 10px;
-    border: 1px solid black;
+.header .right-container>ul a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.profile-dropdown {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap:20px;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    padding: 10px;
+    border: 1px solid black;
 }
-.profile-dropdown img{
-    border-radius: 50px;
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+}
+.profile-dropdown2 {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 150px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-dropdown2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.profile-dropdown2 li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.profile-dropdown2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
 }
