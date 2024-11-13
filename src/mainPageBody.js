@@ -1,6 +1,5 @@
 import "./mainPageBody.css";
 import { useNavigate } from "react-router-dom";
-// import Modal from "react-modal";
 
 function MainPageBody() {
   const navigate = useNavigate();
@@ -41,7 +40,7 @@ function MainPageBody() {
               <button
                 className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/restaurantPageKlausen");
                 }}
               >
                 <div className="image_and_text">
@@ -52,9 +51,10 @@ function MainPageBody() {
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/ginzaSushi");
                 }}
               >
                 <div className="image_and_text">
@@ -65,9 +65,10 @@ function MainPageBody() {
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/formCafe");
                 }}
               >
                 <div className="image_and_text">
@@ -78,9 +79,10 @@ function MainPageBody() {
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/langosKebab");
                 }}
               >
                 <div className="image_and_text">
@@ -115,9 +117,10 @@ function MainPageBody() {
                   <p className="image-text">Marty</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/restaurantPageKlausen");
                 }}
               >
                 <div className="image_and_text">
@@ -128,9 +131,10 @@ function MainPageBody() {
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/ginzaSushi");
                 }}
               >
                 <div className="image_and_text">
@@ -141,9 +145,10 @@ function MainPageBody() {
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/formCafe");
                 }}
               >
                 <div className="image_and_text">
@@ -154,9 +159,10 @@ function MainPageBody() {
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/langosKebab");
                 }}
               >
                 <div className="image_and_text">
@@ -177,7 +183,8 @@ function MainPageBody() {
           <h2 className="sub-title">Best rated</h2>
           <div className="scrollable-list">
             <div className="image-container">
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
                   navigate("/restaurantPage");
                 }}
@@ -190,9 +197,10 @@ function MainPageBody() {
                   <p className="image-text">Marty</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/restaurantPageKlausen");
                 }}
               >
                 <div className="image_and_text">
@@ -203,9 +211,10 @@ function MainPageBody() {
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/ginzaSushi");
                 }}
               >
                 <div className="image_and_text">
@@ -216,9 +225,10 @@ function MainPageBody() {
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/formCafe");
                 }}
               >
                 <div className="image_and_text">
@@ -229,9 +239,10 @@ function MainPageBody() {
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
-              <button className="image_and_text_button"
+              <button
+                className="image_and_text_button"
                 onClick={() => {
-                  navigate("/restaurantPage");
+                  navigate("/langosKebab");
                 }}
               >
                 <div className="image_and_text">

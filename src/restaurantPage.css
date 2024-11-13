@@ -24,6 +24,7 @@
 }
 
 .logo {
+  background-color: #ffffff; /* Fundal alb */
   position: absolute;
   top: 50%; /* Poziționează la mijloc pe verticală */
   left: 50%; /* Poziționează la mijloc pe orizontală */
