@@ -1,48 +1,50 @@
 .restaurant-page {
   background-color: #FFEEDB; /* Culoare de fundal */
   display: flex;
+  flex-direction: column; /* Așază elementele în coloană */
+  align-items: center; /* Aliniază elementele la centru */
   padding: 20px;
+  padding-top: 350px; /* Adaugă spațiu la partea de sus */
+  padding-bottom: 200px; /* Adaugă spațiu la partea de jos */
   border: none; /* Elimină chenarul */
   min-height: 100vh; /* Asigură că fundalul acoperă întreaga înălțime a paginii */
-  flex-direction: column; /* Așază elementele în coloană */
-  overflow-y: auto; /* Adaugă scroll vertical */
-  overflow-x: hidden; /* Elimină scroll-ul orizontal */
 }
 
 .header {
   position: relative;
-  text-align: center;
-  color: #FFEEDB;
-  margin-bottom: 20px; /* Adaugă spațiu sub header */
-  border: none; /* Elimină chenarul */
+  width: 100%;
 }
 
 .background-image {
   width: 100%;
   height: auto;
   border-radius: 20px;
+  border: 2px solid #0c7c59; 
+  margin: 0 auto; /* Centrează imaginea */
 }
 
 .logo {
   position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%; /* Poziționează la mijloc pe verticală */
+  left: 50%; /* Poziționează la mijloc pe orizontală */
+  transform: translate(-50%, -50%); /* Centrează logo-ul */
   border-radius: 20px;
   width: 150px;
   height: auto;
-  border: none; /* Elimină chenarul */
+  border: 2px solid #0c7c59; /* Elimină chenarul */
+  margin: 0; /* Elimină orice margine */
+  padding: 0; /* Elimină orice padding */
 }
 
 .restaurant-name-box {
   position: absolute;
-  top: 115px; /* Ajustează această valoare pentru a poziționa textul sub logo */
+  top: calc(50% + 100px); /* Poziționează la 20px sub logo (50% + 65px pentru logo + 20px) */
   left: 50%;
   transform: translateX(-50%);
   background-color: #FFEEDB; /* Verde cu transparență */
   padding: 10px 20px;
   border-radius: 10px;
-  border: none; /* Elimină chenarul */
+  border: 2px solid #0c7c59; /* Elimină chenarul */
 }
 
 .restaurant-name {
@@ -54,18 +56,17 @@
 
 .content-box {
   text-align: center;
-  position: absolute;
-  top: 700px; /* Ajustează această valoare pentru a poziționa chenarul mai jos */
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  top: 180px; /* Ajustează această valoare pentru a poziționa chenarul mai jos */
+  margin: 20px auto; /* Centrează pe orizontală și adaugă spațiu deasupra și dedesubt */
   background-color: #ffffff;
   padding: 20px;
   border-radius: 20px;
   width: 80%;
   max-width: 800px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adaugă umbră pentru un efect mai plăcut */
-  border: none; /* Elimină chenarul */
-  margin-bottom: 20px;
+  border: 2px solid #0c7c59; /* Elimină chenarul */
+  margin-bottom: 50px; /* Adaugă spațiu sub content-box */
 }
 
 .schedule, .menu, .reservations {
