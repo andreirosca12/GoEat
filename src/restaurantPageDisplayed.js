@@ -2,7 +2,7 @@ import RestaurantPage from './restaurantPage';
 import Header from './Header';
 
 
-function MainPage() {
+function restaurnatPageDisplayed() {
     return (
         <div>
             <Header />
@@ -11,4 +11,4 @@ function MainPage() {
     )
 }
 
-export default MainPage;
+export default restaurnatPageDisplayed;
