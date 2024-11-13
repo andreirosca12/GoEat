@@ -5,10 +5,12 @@ import Header from './Header';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import resPag from './resPag';
+import MainPage from './mainPage';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <resPag/>
+    <MainPage/>
   </React.StrictMode>
 );
 
