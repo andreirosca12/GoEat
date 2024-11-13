@@ -1,22 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
-import MainPageBody from './mainPageBody';
-import RestaurantPage from './restaurantPage';
+import { Route, Routes } from "react-router-dom";
+import RestaurantPageDisplay from "./restaurantPage";
+import MainPage from "./mainPage";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route exact path="/" element={<MainPageBody />} />
-          <Route path="/restaurant" element={<RestaurantPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <Routes>
+      <Route path="/" element={<MainPage />} />
+      <Route path="/restaurantPage" element={<RestaurantPageDisplay />} />
+    </Routes>
   );
 }
-
-
 
 export default App;

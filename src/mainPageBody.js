@@ -1,6 +1,14 @@
 import "./mainPageBody.css";
+import { useNavigate } from "react-router-dom";
+// import Modal from "react-modal";
 
 function MainPageBody() {
+  const navigate = useNavigate();
+
+  const handleNavigation = (route) => {
+    navigate(route);
+  };
+
   return (
     <div className="Body">
       <div className="background-container">
@@ -16,41 +24,73 @@ function MainPageBody() {
           <h2 className="sub-title">Recomanded </h2>
           <div className="scrollable-list">
             <div className="image-container">
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                  alt="Image 1"
-                />
-                <p className="image-text">Marty</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                  alt="Image 2"
-                />
-                <p className="image-text">Klausen Burger Brewery</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                  alt="Image 3"
-                />
-                <p className="image-text">Ginza Sushi</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                  alt="Image 4"
-                />
-                <p className="image-text">Form Cafe</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                  alt="Image 5"
-                />
-                <p className="image-text">Langos & Kebab</p>
-              </div>
+              <button
+                className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
+                    alt="Image 1"
+                  />
+                  <p className="image-text">Marty</p>
+                </div>
+              </button>
+              <button
+                className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
+                    alt="Image 2"
+                  />
+                  <p className="image-text">Klausen Burger Brewery</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
+                    alt="Image 3"
+                  />
+                  <p className="image-text">Ginza Sushi</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
+                    alt="Image 4"
+                  />
+                  <p className="image-text">Form Cafe</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
+                    alt="Image 5"
+                  />
+                  <p className="image-text">Langos & Kebab</p>
+                </div>
+              </button>
               <div className="square-button">
                 <button className="square-button"> More </button>
               </div>
@@ -61,41 +101,72 @@ function MainPageBody() {
           <h2 className="sub-title">Near you</h2>
           <div className="scrollable-list">
             <div className="image-container">
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                  alt="Image 1"
-                />
-                <p className="image-text">Marty</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                  alt="Image 2"
-                />
-                <p className="image-text">Klausen Burger Brewery</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                  alt="Image 3"
-                />
-                <p className="image-text">Ginza Sushi</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                  alt="Image 4"
-                />
-                <p className="image-text">Form Cafe</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                  alt="Image 5"
-                />
-                <p className="image-text">Langos & Kebab</p>
-              </div>
+              <button
+                className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
+                    alt="Image 1"
+                  />
+                  <p className="image-text">Marty</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
+                    alt="Image 2"
+                  />
+                  <p className="image-text">Klausen Burger Brewery</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
+                    alt="Image 3"
+                  />
+                  <p className="image-text">Ginza Sushi</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
+                    alt="Image 4"
+                  />
+                  <p className="image-text">Form Cafe</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
+                    alt="Image 5"
+                  />
+                  <p className="image-text">Langos & Kebab</p>
+                </div>
+              </button>
               <div className="square-button">
                 <button className="square-button"> More </button>
               </div>
@@ -106,42 +177,71 @@ function MainPageBody() {
           <h2 className="sub-title">Best rated</h2>
           <div className="scrollable-list">
             <div className="image-container">
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                  alt="Image 4"
-                />
-                <p className="image-text">Form Cafe</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                  alt="Image 2"
-                />
-                <p className="image-text">Klausen Burger Brewery</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                  alt="Image 5"
-                />
-                <p className="image-text">Langos & Kebab</p>
-              </div>
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                  alt="Image 1"
-                />
-                <p className="image-text">Marty</p>
-              </div>
-
-              <div className="image_and_text">
-                <img
-                  src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                  alt="Image 3"
-                />
-                <p className="image-text">Ginza Sushi</p>
-              </div>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
+                    alt="Image 1"
+                  />
+                  <p className="image-text">Marty</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
+                    alt="Image 2"
+                  />
+                  <p className="image-text">Klausen Burger Brewery</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
+                    alt="Image 3"
+                  />
+                  <p className="image-text">Ginza Sushi</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
+                    alt="Image 4"
+                  />
+                  <p className="image-text">Form Cafe</p>
+                </div>
+              </button>
+              <button className="image_and_text_button"
+                onClick={() => {
+                  navigate("/restaurantPage");
+                }}
+              >
+                <div className="image_and_text">
+                  <img
+                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
+                    alt="Image 5"
+                  />
+                  <p className="image-text">Langos & Kebab</p>
+                </div>
+              </button>
               <div className="square-button">
                 <button className="square-button"> More </button>
               </div>

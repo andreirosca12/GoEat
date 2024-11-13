@@ -1,9 +1,12 @@
 .restaurant-page {
-  color: #2e8b57; /* Verde */
   background-color: #FFEEDB; /* Culoare de fundal */
+  display: flex;
   padding: 20px;
   border: none; /* Elimină chenarul */
   min-height: 100vh; /* Asigură că fundalul acoperă întreaga înălțime a paginii */
+  flex-direction: column; /* Așază elementele în coloană */
+  overflow-y: auto; /* Adaugă scroll vertical */
+  overflow-x: hidden; /* Elimină scroll-ul orizontal */
 }
 
 .header {
@@ -18,8 +21,6 @@
   width: 100%;
   height: auto;
   border-radius: 20px;
-  
-  
 }
 
 .logo {
@@ -52,8 +53,9 @@
 }
 
 .content-box {
+  text-align: center;
   position: absolute;
-  top: 430px; /* Ajustează această valoare pentru a poziționa chenarul mai jos */
+  top: 700px; /* Ajustează această valoare pentru a poziționa chenarul mai jos */
   left: 50%;
   transform: translateX(-50%);
   background-color: #ffffff;
@@ -63,6 +65,7 @@
   max-width: 800px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Adaugă umbră pentru un efect mai plăcut */
   border: none; /* Elimină chenarul */
+  margin-bottom: 20px;
 }
 
 .schedule, .menu, .reservations {
