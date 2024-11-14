@@ -60,9 +60,9 @@ function FormCafe() {
         <div className="menu">
           <h2>Menu</h2>
           <ul>
-            <li>Pizza Margherita - 25 RON</li>
-            <li>Spaghetti Carbonara - 30 RON</li>
-            <li>Caesar Salad - 20 RON</li>
+            <li>Capuccino - 15 RON</li>
+            <li>Tuna Salad - 30 RON</li>
+            <li>Butter Croissant - 20 RON</li>
           </ul>
         </div>
         <div className="reservations">

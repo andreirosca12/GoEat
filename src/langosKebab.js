@@ -69,9 +69,9 @@ function LangosKebab() {
         <div className="menu">
           <h2>Menu</h2>
           <ul>
-            <li>Pizza Margherita - 25 RON</li>
-            <li>Spaghetti Carbonara - 30 RON</li>
-            <li>Caesar Salad - 20 RON</li>
+            <li>Sour cream & cheese lango - 25 RON</li>
+            <li>Gem langos - 25 RON</li>
+            <li>Nutella langos - 25 RON</li>
           </ul>
         </div>
         <div className="reservations">

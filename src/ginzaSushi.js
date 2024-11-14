@@ -60,9 +60,9 @@ function GinzaSushi() {
         <div className="menu">
           <h2>Menu</h2>
           <ul>
-            <li>Pizza Margherita - 25 RON</li>
-            <li>Spaghetti Carbonara - 30 RON</li>
-            <li>Caesar Salad - 20 RON</li>
+            <li> Salmon Nighiri - 25 RON</li>
+            <li> Gyoza - 30 RON</li>
+            <li> Crispy Sushi - 20 RON</li>
           </ul>
         </div>
         <div className="reservations">
