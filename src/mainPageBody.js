@@ -13,7 +13,7 @@ function MainPageBody() {
       <div className="background-container">
         <div className="search-box">
           <p className="search-text">
-            Find your favorite restaurant now and book it now !
+            Find your favorite restaurant and book it now !
           </p>
           <input type="text" className="search-bar" placeholder="Search" />
         </div>
