@@ -15,7 +15,7 @@ function Header()
             <img src={logoGoEat} width='100px' height='100px'/>
             <div className="right-container">
                 <ul>
-                    <li><Link to='/SignUpRestaurant'>Inregistreaza-ti Restaurantul</Link></li>
+                    <li><Link to='/SignUpRestaurant'>Inregistreaza-ti restaurantul</Link></li>
                     <li><a href='#'>Catalog</a></li>
                 </ul>
                 <div className="profile-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
