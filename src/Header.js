@@ -2,6 +2,7 @@ import './Header.css'
 import logoGoEat from './GoeatLogo.png';
 import profile from './profile.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header()
 {
@@ -14,7 +15,7 @@ function Header()
             <img src={logoGoEat} width='100px' height='100px'/>
             <div className="right-container">
                 <ul>
-                    <li><a href='#'>Inregistreaza-ti Restaurantul</a></li>
+                    <li><Link to='/SignUpRestaurant'>Inregistreaza-ti Restaurantul</Link></li>
                     <li><a href='#'>Catalog</a></li>
                 </ul>
                 <div className="profile-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
@@ -25,8 +26,8 @@ function Header()
                 {dropdownVisible && (
                     <div className="profile-dropdown2">
                         <ul>
-                            <li><a href='#'>Creaza Cont</a></li>
-                            <li><a href='#'>Autentificare</a></li>
+                            <li><Link to='/login'>Creaza Cont</Link></li>
+                            <li><Link to='/login'>Autentificare</Link></li>
                         </ul>
                     </div>
                 )}

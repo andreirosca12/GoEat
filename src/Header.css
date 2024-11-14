@@ -27,6 +27,9 @@ body{
     font-size: 20px;
     color: black;
 }
+.header .right-container>ul a:hover{
+    color: #0C7C59;
+}
 .profile-dropdown {
     position: relative;
     display: flex;
@@ -81,4 +84,7 @@ body{
     text-decoration: none;
     color: black;
     font-size: 20px;
+}
+.profile-dropdown2 a:hover{
+    color: #0C7C59;
 }
