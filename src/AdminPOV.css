@@ -1,0 +1,67 @@
+.admin-dashboard {
+  padding: 20px;
+  overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+  text-align: center; /* Centrează textul în interiorul admin-dashboard */
+}
+
+.content-box-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.content-box {
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 300px; /* Adjust as needed */
+  overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+}
+
+.sub-title {
+  margin-bottom: 10px;
+}
+
+.scrollable-list {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+  padding: 10px 0;
+  white-space: nowrap;
+}
+
+.scrollable-list::-webkit-scrollbar {
+  display: none; /* Ascunde scrollbar-ul în browserele WebKit (Chrome, Safari) */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.image_and_text_button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.image_and_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image_and_text img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.image-text {
+  text-align: center;
+}

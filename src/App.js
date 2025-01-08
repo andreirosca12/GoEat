@@ -7,6 +7,9 @@ import LangosKebabDisplayed from "./langosKebabDisplayed";
 import MainPage from "./mainPage";
 import Login from "./Login";
 import SignUpRestaurant from "./SignUpRestaurant";
+import AdminPOV from "./AdminPOV";
+
+
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
       <Route path="/formCafe" element={<FormCafeDisplayed />} />
       <Route path="/ginzaSushi" element={<GinzaSushiDisplayed />} />
       <Route path="/langosKebab" element={<LangosKebabDisplayed />} />
+      <Route path="/AdminPOV" element={<AdminPOV />} />
     </Routes>
   );
 }

@@ -16,7 +16,8 @@ function Header()
             <div className="right-container">
                 <ul>
                     <li><Link to='/SignUpRestaurant'>Inregistreaza-ti restaurantul</Link></li>
-                    <li><a href='#'>Catalog</a></li>
+                    <li><Link to='/AdminPOV'>Admin</Link></li>
+                    
                 </ul>
                 <div className="profile-dropdown" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
                     <div className="profile">
