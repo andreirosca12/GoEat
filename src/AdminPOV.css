@@ -1,0 +1,69 @@
+.admin-dashboard {
+    padding: 20px;
+    overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+    text-align: center; /* Centrează textul în interiorul admin-dashboard */
+  
+  }
+  
+  .content-box-containerA {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center; /* Centrează content box-urile pe orizontală */
+  }
+  
+  .content-boxA {
+    margin-right: 20px;
+    border: 1px solid #0c7c59;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 300px; /* Adjust as needed */
+    overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+  }
+  
+  .sub-titleA {
+    margin-bottom: 10px;
+  }
+  
+  .scrollable-listA {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden; /* Ascunde scrollbar-ul vertical */
+    padding: 10px 0;
+    white-space: nowrap;
+  }
+  
+  .scrollable-list::-webkit-scrollbar {
+    display: none; /* Ascunde scrollbar-ul în browserele WebKit (Chrome, Safari) */
+  }
+  
+  .image-containerA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .image_and_text_buttonA {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image_and_textA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image_and_textA img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .image-textA {
+    text-align: center;
+  }

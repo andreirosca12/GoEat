@@ -1,0 +1,57 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffeedb;
+}
+
+.profile {
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+}
+
+.form-element {
+  margin-bottom: 20px;
+}
+
+.form-element label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.reservations {
+  margin-top: 20px;
+}
+
+.reservations ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reservations li {
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0c7c59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0a6847;
+}

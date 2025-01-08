@@ -7,6 +7,8 @@ import LangosKebabDisplayed from "./langosKebabDisplayed";
 import MainPage from "./mainPage";
 import Login from "./Login";
 import SignUpRestaurant from "./SignUpRestaurant";
+import UserProfile from "./UserProfile";
+import AdminPOV from "./AdminPOV";
 
 function App() {
   return (
@@ -15,10 +17,15 @@ function App() {
       <Route path="/Login" element={<Login />} />
       <Route path="/SignUpRestaurant" element={<SignUpRestaurant />} />
       <Route path="/restaurantPage" element={<RestaurantPageDisplayed />} />
-      <Route path="/restaurantPageKlausen" element={<RestaurantPageDisplayedKlausen />} />
+      <Route
+        path="/restaurantPageKlausen"
+        element={<RestaurantPageDisplayedKlausen />}
+      />
       <Route path="/formCafe" element={<FormCafeDisplayed />} />
       <Route path="/ginzaSushi" element={<GinzaSushiDisplayed />} />
       <Route path="/langosKebab" element={<LangosKebabDisplayed />} />
+      <Route path="/UserProfile" element={<UserProfile />} />
+      <Route path="/AdminPOV" element={<AdminPOV />} />
     </Routes>
   );
 }
