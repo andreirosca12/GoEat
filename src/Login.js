@@ -15,23 +15,22 @@ function Login() {
                 email: email,
                 password: password,
             });
-
-            if (response.status === 200)
-            {
-                alert(response.message);
-                if (response.user.isAdmin === "1") {
-                    localStorage.setItem("admin", JSON.stringify(response.user));  // Store user data in local storage
-                    navigate("/admin");  // Redirect to home page or login page
-                }
-                else{
-                    localStorage.setItem("client", JSON.stringify(response.user));  // Store user data in local storage
-                    navigate("/");  // Redirect to home page or login page
+            
+            if (response.status === 200) {
+                const user = response.data.user;  // Adjust to the actual structure
+                console.log(user);
+                if (user.is_admin === 1) {
+                    localStorage.setItem("admin", JSON.stringify(user));
+                    navigate("/AdminPOV");
+                } else {
+                    localStorage.setItem("client", JSON.stringify(user));
+                    navigate("/");
                 }
             }
-            if(response.status === 201) {
-                alert(response.message);
-                localStorage.setItem("restaurant", JSON.stringify(response.restaurant));  // Store user data in local storage
-                navigate("/");  // Redirect to home page or login page
+            if (response.status === 201) {
+                alert(response.data.message);
+                localStorage.setItem("restaurant", JSON.stringify(response.data.restaurant));
+                navigate("/");
             }
         } catch (error) {
             // Handle error (e.g., duplicate email or server error)

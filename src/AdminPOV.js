@@ -24,6 +24,7 @@ function AdminPOV() {
     { id: 5, name: "Restaurant 5", image: langos },
   ]);
 
+  
   const handleDeleteClient = (id) => {
     setClientRequests(clientRequests.filter((client) => client.id !== id));
   };
