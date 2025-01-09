@@ -1,5 +1,10 @@
 import "./mainPageBody.css";
 import { useNavigate } from "react-router-dom";
+import martyFrontPage from "./assets/martyFrontPage.jpg";
+import kalusenFront from "./assets/klausenFront.jpg";
+import sushiFront from "./assets/sushiFront.jpg";
+import formFront from "./assets/formFront.jpg";
+import langos from "./assets/langos.jpg";
 
 function MainPageBody() {
   const navigate = useNavigate();
@@ -13,88 +18,63 @@ function MainPageBody() {
       <div className="background-container">
         <div className="search-box">
           <p className="search-text">
-            Find your favorite restaurant and book it now !
+            Find your favorite restaurant and book it now!
           </p>
           <input type="text" className="search-bar" placeholder="Search" />
         </div>
       </div>
       <div className="content">
         <div className="row">
-          <h2 className="sub-title">Recomanded </h2>
+          <h2 className="sub-title">Recommended</h2>
           <div className="scrollable-list">
             <div className="image-container">
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPage");
-                }}
+                onClick={() => handleNavigation("/restaurantPage")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                    alt="Image 1"
-                  />
+                  <img src={martyFrontPage} alt="Marty Front Page" />
                   <p className="image-text">Marty</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPageKlausen");
-                }}
+                onClick={() => handleNavigation("/restaurantPageKlausen")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                    alt="Image 2"
-                  />
+                  <img src={kalusenFront} alt="Klausen Front" />
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/ginzaSushi");
-                }}
+                onClick={() => handleNavigation("/ginzaSushi")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                    alt="Image 3"
-                  />
+                  <img src={sushiFront} alt="Sushi Front" />
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/formCafe");
-                }}
+                onClick={() => handleNavigation("/formCafe")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                    alt="Image 4"
-                  />
+                  <img src={formFront} alt="Form Front" />
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/langosKebab");
-                }}
+                onClick={() => handleNavigation("/langosKebab")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                    alt="Image 5"
-                  />
+                  <img src={langos} alt="Langos" />
                   <p className="image-text">Langos & Kebab</p>
                 </div>
               </button>
               <div className="square-button">
-                <button className="square-button"> More </button>
+                <button className="square-button">More</button>
               </div>
             </div>
           </div>
@@ -105,76 +85,51 @@ function MainPageBody() {
             <div className="image-container">
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPage");
-                }}
+                onClick={() => handleNavigation("/restaurantPage")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                    alt="Image 1"
-                  />
+                  <img src={martyFrontPage} alt="Marty Front Page" />
                   <p className="image-text">Marty</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPageKlausen");
-                }}
+                onClick={() => handleNavigation("/restaurantPageKlausen")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                    alt="Image 2"
-                  />
+                  <img src={kalusenFront} alt="Klausen Front" />
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/ginzaSushi");
-                }}
+                onClick={() => handleNavigation("/ginzaSushi")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                    alt="Image 3"
-                  />
+                  <img src={sushiFront} alt="Sushi Front" />
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/formCafe");
-                }}
+                onClick={() => handleNavigation("/formCafe")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                    alt="Image 4"
-                  />
+                  <img src={formFront} alt="Form Front" />
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/langosKebab");
-                }}
+                onClick={() => handleNavigation("/langosKebab")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                    alt="Image 5"
-                  />
+                  <img src={langos} alt="Langos" />
                   <p className="image-text">Langos & Kebab</p>
                 </div>
               </button>
               <div className="square-button">
-                <button className="square-button"> More </button>
+                <button className="square-button">More</button>
               </div>
             </div>
           </div>
@@ -185,80 +140,56 @@ function MainPageBody() {
             <div className="image-container">
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPage");
-                }}
+                onClick={() => handleNavigation("/restaurantPage")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/CROP2-TAZZ-3000x2000_2.jpg"
-                    alt="Image 1"
-                  />
+                  <img src={martyFrontPage} alt="Marty Front Page" />
                   <p className="image-text">Marty</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/restaurantPageKlausen");
-                }}
+                onClick={() => handleNavigation("/restaurantPageKlausen")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/web2020_11_KlausenBurger_CatalinHladi-1829.jpg"
-                    alt="Image 2"
-                  />
+                  <img src={kalusenFront} alt="Klausen Front" />
                   <p className="image-text">Klausen Burger Brewery</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/ginzaSushi");
-                }}
+                onClick={() => handleNavigation("/ginzaSushi")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/PONZU_SAKE_NIGIRI_BOX_MEDIUM_1.jpg"
-                    alt="Image 3"
-                  />
+                  <img src={sushiFront} alt="Sushi Front" />
                   <p className="image-text">Ginza Sushi</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/formCafe");
-                }}
+                onClick={() => handleNavigation("/formCafe")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/FC-tazz-cover.png"
-                    alt="Image 4"
-                  />
+                  <img src={formFront} alt="Form Front" />
                   <p className="image-text">Form Cafe</p>
                 </div>
               </button>
               <button
                 className="image_and_text_button"
-                onClick={() => {
-                  navigate("/langosKebab");
-                }}
+                onClick={() => handleNavigation("/langosKebab")}
               >
                 <div className="image_and_text">
-                  <img
-                    src="https://tazzcdn.akamaized.net/uploads/cover/96d9bbb4c70a136d48574a25bc39ba48.jpg"
-                    alt="Image 5"
-                  />
+                  <img src={langos} alt="Langos" />
                   <p className="image-text">Langos & Kebab</p>
                 </div>
               </button>
               <div className="square-button">
-                <button className="square-button"> More </button>
+                <button className="square-button">More</button>
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   );
