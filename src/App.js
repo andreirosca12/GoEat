@@ -23,9 +23,15 @@ function App() {
         path="/restaurantPageKlausen"
         element={<RestaurantPageDisplayedKlausen />}
       />
+      <Route
+        path="/restaurantPageKlausen"
+        element={<RestaurantPageDisplayedKlausen />}
+      />
       <Route path="/formCafe" element={<FormCafeDisplayed />} />
       <Route path="/ginzaSushi" element={<GinzaSushiDisplayed />} />
       <Route path="/langosKebab" element={<LangosKebabDisplayed />} />
+      <Route path="/UserProfile" element={<UserProfile />} />
+      <Route path="/AdminPOV" element={<AdminPOV />} />
       <Route path="/UserProfile" element={<UserProfile />} />
       <Route path="/AdminPOV" element={<AdminPOV />} />
     </Routes>
